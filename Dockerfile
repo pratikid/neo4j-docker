@@ -33,6 +33,8 @@ WORKDIR /var/lib/neo4j
 
 VOLUME /data
 
+COPY slm-1.0.jar /var/lib/neo4j/plugins
+
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 EXPOSE 7474 7473 7687
