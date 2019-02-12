@@ -33,6 +33,8 @@ WORKDIR /var/lib/neo4j
 
 VOLUME /data
 
+COPY neo4j.conf var/lib/neo4j/conf/neo4j.conf
+
 COPY slm-1.0.jar /var/lib/neo4j/plugins
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
